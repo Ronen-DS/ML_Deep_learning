@@ -5,7 +5,7 @@ temporal trajectory of intrapartum cardiotocography (CTG) signals, fused with
 clinical metadata and handcrafted signal features in a LightGBM classifier,
 to predict **fetal acidemia (umbilical artery pH ≤ 7.15)** during labor.
 
-📄 Manuscript: [`docs/Manuscript.docx`](docs/Manuscript.docx) · 📊 Slides: [`docs/Final.pdf`](docs/Final.pdf)
+### 📊 [View the presentation (PDF)](Presentation.pdf) · 📄 [Read the manuscript](Manuscript.docx)
 
 ## Results
 
@@ -58,6 +58,8 @@ For comparison, the clinical baseline reported in *Cureus* 2025;17(11) gives rec
 ## Repository layout
 
 ```
+├── Presentation.pdf              project presentation
+├── Manuscript.docx               manuscript
 ├── src/
 │   ├── download_data.py          download CTU-UHB from PhysioNet
 │   └── step0_build_inputs.py     cleaning + features → input files for steps 2 and 3
@@ -66,7 +68,6 @@ For comparison, the clinical baseline reported in *Cureus* 2025;17(11) gives rec
 │   ├── step2_create_mil_bags.ipynb             windowing → MIL bags
 │   └── step3_mil_cnn_lightgbm_fusion.ipynb     MIL-CNN + LightGBM fusion and evaluation
 ├── data/README.md                where to get the data
-├── docs/                         manuscript and presentation
 └── requirements.txt
 ```
 

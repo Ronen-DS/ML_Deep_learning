@@ -9,10 +9,10 @@ data/CTGDL_FHRMA_ano_csv/
 *.keras
 *.csv
 *.pdf
-!docs/*.pdf
+!Presentation.pdf
 
-# Slides are published as docs/Final.pdf (GitHub can't preview .pptx)
-docs/*.pptx
+# Slides are published as Presentation.pdf (GitHub can't preview .pptx)
+*.pptx
 
 # Python / Jupyter
 __pycache__/
