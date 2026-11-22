@@ -1,0 +1,29 @@
+# Raw data (download with src/download_data.py)
+data/CTU_DB/
+data/CTGDL_FHRMA_ano_csv/
+
+# Generated intermediate files and models (large, re-creatable)
+*.npz
+*.pkl
+*.pt
+*.keras
+*.csv
+*.pdf
+!docs/*.pdf
+
+# Slides are published as docs/Final.pdf (GitHub can't preview .pptx)
+docs/*.pptx
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+~$*
+.vscode/
+.idea/
